@@ -1,3 +1,10 @@
+# why did I make this
+
+#### wanted to be able to use my own IDE
+- being able to use my own IDE instead of a vscode
+- if you use something like Ruby Mine for JetBrains you can connect this docker image to it and have it start and debug this ruby container inside the IDE.
+- I know you can easily connect this to jetbrains and vim, but will most likely work for others as well.
+
 # information
 
 #### hot fixes
