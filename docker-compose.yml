@@ -1,0 +1,18 @@
+# docker-compose is used as a config system for the docker image contianing information on it
+# in a easier way.
+version: "3.7"
+
+# this is where you can create a service that has specific variables
+services:
+  ## name of the ruby service
+  ruby_dev:
+    build: .
+    container_name: ruby_dev
+    # bind the port to the correct port on the host machine
+    ports:
+      - "3000:3000"
+    # volumes that are partitioned to the main machine to make sure the files are linked
+    # this will allow the user to edit code on the host and it will send it to the server
+    volumes:
+      # we want to connnect our current dir to the location of the app
+      - ./:/home/app
