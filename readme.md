@@ -4,6 +4,10 @@
 
 - this still uses hot fixing so you can update the app from the host machine and it will send it through to the docker image
 
+- Dockerfile is the actual image while we add to it with the docker-compose.yml with a config like structure.
+	- When running the docker compose command it will use the docker-compose file and link it with the dockerfile to build.
+ 	- If you wanted to create a prod and a dev one that is possible. I didnt add it to this but you would just make a file like docker-compose.prod.yml and use that as the build.
+
 # build the image
 
 ##### use this command to build the server
