@@ -81,12 +81,13 @@ $ git clone URL ./myapp
 
 #### cd into project
 
+- need to do this and the rest of the steps on the docker container
+
 ```
 $ cd myapp
 ```
 
 #### might need to rake the db
-	- need to do this and the rest of the steps on the docker container
 
 ```
 $ rake db:migrate
